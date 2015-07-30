@@ -1,1 +1,28 @@
+@import "normalize.styl"
 
+.Header
+  display block
+  text-align center
+  &__logo
+    margin 0 auto
+    &--image
+      width 100%
+      height auto
+    &--text
+      font-size 1.3em
+      display none
+
+.Menu
+  display none
+  margin 0.5em 0
+  padding 0
+  background #454545
+  &__item
+    list-style none
+    &--link
+      padding 0.3em 0
+      color white
+      display block
+      text-decoration none
+      &:hover
+        background rgba(#a2a2a2, 70%)
