@@ -1,28 +1,37 @@
 @import "normalize.styl"
+@import "Profile/style.styl"
 
 .Header
+  color white
   display block
   text-align center
+  background black
   &__logo
     margin 0 auto
     &--image
       width 100%
       height auto
+      background rgba(white, 0.1)
     &--text
       font-size 1.3em
       display none
 
+#Menu-btn
+  color white
+  text-decoration none
+  
 .Menu
   display none
   margin 0.5em 0
   padding 0
-  background #454545
+  background black
   &__item
     list-style none
+    border-bottom 1px #525252 solid
     &--link
-      padding 0.3em 0
       color white
+      padding 0.3em 0
       display block
       text-decoration none
       &:hover
-        background rgba(#a2a2a2, 70%)
+        background rgba(#229fe6, 0.7)
