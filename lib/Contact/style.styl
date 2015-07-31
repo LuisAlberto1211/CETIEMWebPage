@@ -1,0 +1,46 @@
+.Contact
+  background #229fe6
+  color white
+  padding 2em
+  text-align center
+  &__title
+    margin 0
+  &__text
+    margin 1em 0
+  &__content
+  &__text
+    display flex
+    justify-content center
+    flex-wrap wrap
+
+.Form
+  color black
+  justify-content center
+  margin 0.5em 0
+  &__name
+  &__email
+  &__message
+  &__submit
+    width 80%
+    margin 0.5em 0
+    padding 0.3em 0.5em
+    border none
+    border-radius 8px
+  &__message
+    height 80px
+    resize none
+  &__submit
+    width 45%
+    background orange
+    border orange 5px solid
+    color white
+    font-weight bold
+
+@media screen and (min-width: 700px)
+  .Contact
+    &__text
+    &__form
+      width 45%
+      align-items center
+    &__text
+      font-size 1.2em

@@ -10,36 +10,43 @@ html(lang="es")
       figure(class="Header__logo") 
         img(class="Header__logo--image", src="./public/img/cetiem.png", alt="Capítulo Estudiantil de Tecnología y Emprendimiento")
         h1(class="Header__logo--text") Capítulo Estudiantil de Tecnología, Innovación y Emprendimiento
-      nav(class="Header__menu")
-        a(href="#" id="Menu-btn") Menú
-        ul(class="Menu" id="Menu")
-          li(class="Menu__item")
-            a(class="Menu__item--link", href="#") ¿Quiénes somos?
-          li(class="Menu__item")
-            a(class="Menu__item--link", href="#") Proyectos
-          li(class="Menu__item")
-            a(class="Menu__item--link", href="#") Eventos
-          li(class="Menu__item")
-            a(class="Menu__item--link", href="#") Miembros
-          li(class="Menu__item")
-            a(class="Menu__item--link", href="#contact") Contacto
+    nav(class="Nav__menu")
+      a(href="#" id="Menu-btn") Menú
+      ul(class="Menu" id="Menu")
+        li(class="Menu__item")
+          a(class="Menu__item--link", href="#") ¿Quiénes somos?
+        li(class="Menu__item")
+          a(class="Menu__item--link", href="#") Proyectos
+        li(class="Menu__item")
+          a(class="Menu__item--link", href="#") Eventos
+        li(class="Menu__item")
+          a(class="Menu__item--link", href="#") Miembros
+        li(class="Menu__item")
+          a(class="Menu__item--link", href="#contact") Contacto
     section(class="Info") 
-      h2 ¿Quiénes Somos?
+      h2(class="Info__title") ¿Quiénes Somos?
       p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt tenetur, magni vitae odit perspiciatis suscipit dignissimos provident facere saepe! Quas, odit beatae mollitia animi, quaerat debitis enim? Officia, iste, a!
     section(class="Projects") 
-      h2 Proyectos
+      h2(class="Projects__title") Proyectos
       p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt tenetur, magni vitae odit perspiciatis suscipit dignissimos provident facere saepe! Quas, odit beatae mollitia animi, quaerat debitis enim? Officia, iste, a!
     section(class="Events") 
-      h2 Eventos
+      h2(class="Events__title") Eventos
       p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt tenetur, magni vitae odit perspiciatis suscipit dignissimos provident facere saepe! Quas, odit beatae mollitia animi, quaerat debitis enim? Officia, iste, a!
     section(class="Members")
       h2(class="Members__title") Miembros
       div(class="Members__profiles")
         each member in ["César Villaseñor", "Brenda García", "Jesús Cedillo", "Luis Villeda", "Rodolfo Castillo", "Oscar Díaz", "Luis Ortega" ]
           include ./Profile/profile.jade
-    section(class="Contact")
+    footer(class="Contact")
       a(name="contact") 
-      h2 Contacto
-      p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt tenetur, magni vitae odit perspiciatis suscipit dignissimos provident facere saepe! Quas, odit beatae mollitia animi, quaerat debitis enim? Officia, iste, a!
+      h2(class="Contact__title") ¡Déjanos un mensaje!
+      div(class="Contact__content") 
+        p(class="Contact__text") ¿Tienes una idea, comentario o deseas saber más de CETIEM? Llena este breve formulario y nosotros te responderemos tan pronto podamos.
+        div(class="Contact__form") 
+          form(class="Form", method="GET", action="")
+            input(class="Form__name", type="text", placeholder="Nombre", name="nombre", required)
+            input(class="Form__email", type="email", placeholder="Correo", name="email", required)
+            textarea(class="Form__message", placeholder="Mensaje", name="mensaje", required)
+            input(class="Form__submit", type="submit", value="Enviar")
     script(src="./public/js/jquery-1.11.3.min.js")
     script(src="./public/js/script.js")

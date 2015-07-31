@@ -1,5 +1,6 @@
 @import "normalize.styl"
 @import "Profile/style.styl"
+@import "Contact/style.styl"
 
 .Header
   color white
@@ -8,9 +9,10 @@
   background black
   &__logo
     margin 0 auto
+    width 100%
+    height auto
     &--image
       width 100%
-      height auto
       background rgba(white, 0.1)
     &--text
       font-size 1.3em
@@ -19,7 +21,11 @@
 #Menu-btn
   color white
   text-decoration none
-  
+
+.Nav__menu
+  text-align center
+  background black
+
 .Menu
   display none
   margin 0.5em 0
@@ -35,3 +41,41 @@
       text-decoration none
       &:hover
         background rgba(#229fe6, 0.7)
+
+.Members
+  margin-bottom 1em
+
+.Info
+.Projects
+.Events
+.Members
+.Contact
+  &__title
+    text-align center
+
+@media screen and (min-width: 700px)
+  .Header
+    overflow hidden
+    &__logo
+      margin 0.5em
+      display flex
+      justify-content center
+      &--image
+        width 300px
+        height 80px
+      &--text
+        display flex
+        align-items center
+        padding 0 0.5em
+
+  #Menu-btn
+    display none
+
+  .Menu
+    display flex
+    justify-content space-around
+    margin 0
+    &__item
+      display block
+      margin 0
+      width 100%
