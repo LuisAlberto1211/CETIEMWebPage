@@ -60,24 +60,24 @@
     &__logo
       margin 0.5em 0
       display flex
-      justify-content center
+      justify-content space-around
+      height 80px
       &--image
-        text-align center
         width 300px
-        height 80px
       &--text
         display flex
-        align-items center
         padding 0 0.5em
-
-  #Menu-btn
-    display none
+        align-items center
 
   .Menu
     display flex
-    justify-content space-around
+    justify-content center
     margin 0
     &__item
-      display block
-      margin 0
-      width 100%
+      display inline-block
+      &--link
+        display block
+        padding 1em
+
+  #Menu-btn
+    display none
