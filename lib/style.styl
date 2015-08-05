@@ -1,6 +1,10 @@
 @import "normalize.styl"
+@import "fonts/style.styl"
 @import "Profile/style.styl"
 @import "Contact/style.styl"
+
+html
+  font-family: 'Lato', sans-serif
 
 .Header
   color white
@@ -20,17 +24,23 @@
 
 #Menu-btn
   color white
-  text-decoration none
-
-.Nav__menu
-  text-align center
-  background black
+  cursor pointer
+  font-size 1.3em
 
 .Menu
-  display none
-  margin 0.5em 0
-  padding 0
+  text-align center
   background black
+  & input
+    display none
+  & input:checked ~ .Menu__list
+    height 148px
+  &__list
+    margin 0.5em 0
+    padding 0
+    background black
+    height 0
+    overflow hidden
+    transition height 0.3s ease-in-out
   &__item
     list-style none
     border-bottom 1px #525252 solid
@@ -70,9 +80,9 @@
         align-items center
 
   .Menu
-    display flex
-    justify-content center
-    margin 0
+    &__list
+      height auto
+      margin 0
     &__item
       display inline-block
       &--link

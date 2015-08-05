@@ -4,15 +4,17 @@ html(lang="es")
     meta(charset="UTF-8")
     meta(name="viewport",content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0")
     title Capítulo Estudiantil de Tecnología, Innovación y Emprendimiento
+    link(href='http://fonts.googleapis.com/css?family=Lato:400,300,700', rel='stylesheet', type='text/css')
     link(rel="stylesheet", href="./public/css/style.css")
   body
     header(class="Header")
       figure(class="Header__logo") 
         img(class="Header__logo--image", src="./public/img/cetiem.png", alt="Capítulo Estudiantil de Tecnología y Emprendimiento")
         h1(class="Header__logo--text") Capítulo Estudiantil de Tecnología, Innovación y Emprendimiento
-    nav(class="Nav__menu")
-      a(href="#" id="Menu-btn") Menú
-      ul(class="Menu" id="Menu")
+    nav(class="Menu")
+      input(name="Menu-acordeon", type="checkbox", id="Menu-acordeon")
+      label(for="Menu-acordeon", class="icon-menu", id="Menu-btn") 
+      ul(class="Menu__list" id="Menu")
         li(class="Menu__item")
           a(class="Menu__item--link", href="#") ¿Quiénes somos?
         li(class="Menu__item")
