@@ -2,6 +2,7 @@
 @import "normalize.styl"
 @import "fonts/style.styl"
 @import "News/style.styl"
+@import "About/style.styl"
 @import "Profile/style.styl"
 @import "Contact/style.styl"
 
@@ -65,69 +66,6 @@ html
   &__title
     text-align center
 
-.About
-  &__container
-    margin 0 auto
-    width 100%
-    & .About__container--input
-      visibility hidden
-      float right
-    & .About__container--input:hover + .About__container--label
-    & .About__container--input:checked + .About__container--label
-      color white
-      background #229fe6
-    & .About__container--input#description:checked ~ .About__content .About__content--description
-    & .About__container--input#mision:checked ~ .About__content .About__content--mision
-    & .About__container--input#vision:checked ~ .About__content .About__content--vision
-    & .About__container--input#goals:checked ~ .About__content .About__content--goals
-      display block
-    & .About__container--label
-      cursor pointer
-      display inline-block
-      height 2.5em
-      line-height 2.5em
-      padding 0.5em 1em
-      text-align center
-  &__content
-    border 3px solid #229fe6
-    width 100%
-    display block
-    border-radius 0 0 15px 15px
-    box-sizing border-box
-    margin 0
-    color white
-    & .About__content--description
-    & .About__content--mision
-    & .About__content--vision
-      display none
-      border-radius 0 0 12px 12px
-    & .About__content--description
-      background-image url("../img/quienes.jpg")
-      background-size cover
-      border-radius 0 0 12px 12px
-    & .About__content--mision
-      background-image url("../img/mision.jpg")
-      background-size cover
-    & .About__content--vision
-      background-image url("../img/vision.jpg")
-      background-size cover
-    &--title
-    &--image
-    &--text
-      background rgba(black, 0.6)
-      margin 0
-      padding 1em
-    &--title
-      padding-bottom 0.4em
-      text-align center
-    &--image
-      padding 0
-      text-align center
-      font-size 5em
-    &--text
-      padding-bottom 2em
-      border-radius 0 0 12px 12px
-
 @media screen and (min-width: 700px)
   .Header
     overflow hidden
@@ -154,10 +92,6 @@ html
       &--link
         display block
         padding 1em
-
-  .About
-    &__container
-      max-width 80%
 
   #Menu-btn
     display none
