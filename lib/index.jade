@@ -46,7 +46,32 @@ html(lang="es")
         ul(id="Slider__controls", class="Slider__controls")
     section(class="About") 
       h2(class="About__title") ¿Quiénes Somos?
-      p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, quas. Vero inventore, ad sint molestiae ipsum animi non dolor voluptatibus libero tempore labore explicabo numquam aperiam, saepe harum quam, maxime!
+      div(class="About__container")
+        input(type="radio", id="description", name="about-group", class="About__container--input", checked)
+        label(for="description", class="About__container--label") Descripción
+        input(type="radio", id="mision", name="about-group", class="About__container--input")
+        label(for="mision", class="About__container--label") Misión
+        input(type="radio", id="vision", name="about-group", class="About__container--input")
+        label(for="vision", class="About__container--label") Visión
+        div(class="About__content")
+          div(class="About__content--description")
+            h2(class="About__content--title") CETIEM
+            div(class="About__content--image")
+            div(class="About__content--text")
+              p Donde los jóvenes universitarios expanden sus horizontes de creatividad y conocimiento al entrar en colaboración con diferentes perfiles que propician la generación de ideas de manera divertida y profesional.
+              h3 Objetivos
+              ul(class="About__content--list")
+                li(class="About__content--item") Reunir al talento universitario en un grupo donde intervenga su inventiva y creatividad en proyectos multidisciplinarios
+                li(class="About__content--item") Promover la innovación, emprendimiento y tecnología mediante actividades complementarias el ecosistema universitario.
+                li(class="About__content--item") Generar oportunidades de creación de startups, proyectos de investigación y crecimiento profesional en varias áreas de la universidad.
+          div(class="About__content--mision")
+            h2(class="About__content--title") Misión
+            div(class="About__content--image icon-accessibility")
+            p(class="About__content--text") Contribuir a la generación de oportunidades en tecnología, innovación y emprendimiento con un ecosistema de interacción entre profesiones que promueva el talento joven mexicano.
+          div(class="About__content--vision")
+            h2(class="About__content--title") Visión
+            div(class="About__content--image icon-flag")
+            p(class="About__content--text") En un corto periodo seremos la base de una generación de jóvenes profesionistas que comparten ideales en la aportación de talento con proyectos de alto impacto con un beneficio social.
     section(class="Projects") 
       h2(class="Projects__title") Proyectos
       p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt tenetur, magni vitae odit perspiciatis suscipit dignissimos provident facere saepe! Quas, odit beatae mollitia animi, quaerat debitis enim? Officia, iste, a!
