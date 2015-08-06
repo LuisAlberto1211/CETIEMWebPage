@@ -25,9 +25,28 @@ html(lang="es")
           a(class="Menu__item--link", href="#") Miembros
         li(class="Menu__item")
           a(class="Menu__item--link", href="#contact") Contacto
-    section(class="Info") 
-      h2(class="Info__title") ¿Quiénes Somos?
-      p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt tenetur, magni vitae odit perspiciatis suscipit dignissimos provident facere saepe! Quas, odit beatae mollitia animi, quaerat debitis enim? Officia, iste, a!
+    section(class="News")
+      div(class="News__slider", id="News__slider")
+        ul(class="Slider", id="Slider__about")
+          li(class="Slide Slide-current")
+            img(class="Slide__image", src="public/img/imagen1.jpg", alt="")
+            div(class="Slide__caption")
+              h3(class="Slide__title") CETIEM
+              p(class="Slide__description") Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, eaque aperiam asperiores voluptates, quasi corporis expedita fugiat amet nemo officiis, nisi veritatis cupiditate dolores hic. Id quia reprehenderit ex officia.
+          li(class="Slide")
+            img(class="Slide__image", src="public/img/imagen2.jpg", alt="")
+            div(class="Slide__caption")
+              h3(class="Slide__title") CETIEM
+              p(class="Slide__description") Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, eaque aperiam asperiores voluptates, quasi corporis expedita fugiat amet nemo officiis, nisi veritatis cupiditate dolores hic. Id quia reprehenderit ex officia.
+          li(class="Slide")
+            img(class="Slide__image", src="public/img/imagen3.jpg", alt="")
+            div(class="Slide__caption")
+              h3(class="Slide__title") CETIEM
+              p(class="Slide__description") Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, eaque aperiam asperiores voluptates, quasi corporis expedita fugiat amet nemo officiis, nisi veritatis cupiditate dolores hic. Id quia reprehenderit ex officia.
+        ul(id="Slider__controls", class="Slider__controls")
+    section(class="About") 
+      h2(class="About__title") ¿Quiénes Somos?
+      p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, quas. Vero inventore, ad sint molestiae ipsum animi non dolor voluptatibus libero tempore labore explicabo numquam aperiam, saepe harum quam, maxime!
     section(class="Projects") 
       h2(class="Projects__title") Proyectos
       p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt tenetur, magni vitae odit perspiciatis suscipit dignissimos provident facere saepe! Quas, odit beatae mollitia animi, quaerat debitis enim? Officia, iste, a!
