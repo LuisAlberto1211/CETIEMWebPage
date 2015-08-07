@@ -36,7 +36,17 @@
     color white
     font-weight bold
 
-@media screen and (min-width: 700px)
+.Social
+  &__link
+    color white
+    text-decoration underline
+.Maps
+  .map__small
+    width 100%
+  .map
+    display none
+
+@media screen and (min-width: 1000px)
   .Contact
     &__text
     &__form
@@ -44,3 +54,22 @@
       align-items center
     &__text
       font-size 1.2em
+    &__social
+      display flex
+      margin 0
+      justify-content space-around
+
+  .Social
+    display block
+    align-items center
+    justify-content center
+
+  .Maps
+    width 640px
+    height 320px
+    .map
+      display inline-block
+      width 100%
+      height 100%
+    .map__small
+      display none
